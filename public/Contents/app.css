@@ -1,0 +1,12 @@
+#header {
+    background-image: url("../Assets/images/a.jpg");
+    height: 30em;
+}
+
+#header a{
+    color: white;
+}
+
+#header a:hover{
+    text-decoration-line: none;
+}
