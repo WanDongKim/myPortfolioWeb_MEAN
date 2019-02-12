@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+// server js file for node
+// FIle name: server.js
+// Name: Dongwan Kim
+// Student id: 300932262
+// Date: Feb 11th, 2019
+
+
 /**
  * Module dependencies.
  */

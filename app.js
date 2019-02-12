@@ -1,3 +1,10 @@
+
+// app js file for express
+// FIle name: app.js
+// Name: Dongwan Kim
+// Student id: 300932262
+// Date: Feb 11th, 2019
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
@@ -7,6 +14,7 @@ let logger = require('morgan');
 // point Mongoose to the DB URI
 
 let indexRouter = require('./routes/index');
+
 // let contactRouter = require('./routes/contact');
 // let aboutRouter = require('./routes/about');
 let app = express();
