@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 router.get('/', function(req, res, next){
-    res.render('index',{title: "Hi"});
+    res.render('index',{title: "Home"});
 })
 router.get('/about', function(req, res, next){
     res.render('about/index',{title: "Hi, this is about me page"});
