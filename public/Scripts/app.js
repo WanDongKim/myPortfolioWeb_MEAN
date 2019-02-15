@@ -11,3 +11,13 @@
 
     window.addEventListener("load", Start);
 })();
+
+function confirmInput() {
+    fname = document.forms[0].fname.value;
+    lname = document.forms[0].lname.value;
+    email = document.forms[0].email.value;
+    message = document.forms[0].message.value;
+
+    total = "Hello, " + fname + " " + lname + "(" + email + ")"+ "\nYour email is sent with contents:\n" + message;
+    alert(total);
+}

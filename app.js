@@ -11,7 +11,7 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
-// point Mongoose to the DB URI
+
 
 let indexRouter = require('./routes/index');
 
