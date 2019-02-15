@@ -1,56 +1,30 @@
-/* Header style file
-    FIle name: header.css
+/* About style file
+    FIle name: about.css
     Name: Dongwan Kim
     Student id: 300932262
-    Date: Feb 11th, 2019
+    Date: Feb 13rd, 2019
 */
-
- #header {
-    background-image: url("../Assets/images/header_back.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+#picture {
+    margin-left: auto;
+    margin-right: auto;
 }
-#header a{
-    color: white;
-} 
-#header a:hover{
-    color: tomato;
-    transition: 1s;
+#picture img{
+    width: 15rem;
 }
 
-#header h1, h5{
-    font-weight: bold;  
+#description{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#header hr {
-    display: block;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-style: inset;
-    border-width: 1px;
-    border-color:darkgray;
+#description #name{
+    margin-top: 2rem;
 }
-#header .intro{
-    color: white;
-    text-align: center;
-    margin-top: 1%;
-}
-#header .intro h3{
-    margin-top: 1rem;
-    font-size: 1.5rem;
-}
-#header .intro h5{
-    font-size: 1.2rem;
-}
-#header .social {
-    color: white;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-}
-#header .social a{
-    cursor: pointer;
-    margin: 0 0.5rem 0 0.5rem;
-}
+#description #name h2{
+    margin-top: 2rem;
 
+}
+#description #info {
+    margin: 1rem;
+}
+#description #info a:hover{
+    text-decoration-line: none;
+}
