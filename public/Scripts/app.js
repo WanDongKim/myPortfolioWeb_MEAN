@@ -12,7 +12,7 @@
     window.addEventListener("load", Start);
 })();
 
-function confirmInput() {
+function alertMessage() {
     fname = document.forms[0].fname.value;
     lname = document.forms[0].lname.value;
     email = document.forms[0].email.value;
