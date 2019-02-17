@@ -1,3 +1,10 @@
+
+// route each pages
+// FIle name: index.js
+// Name: Dongwan Kim
+// Student id: 300932262
+// Date: Feb 16th, 2019
+
 let express = require('express');
 let router = express.Router();
 
