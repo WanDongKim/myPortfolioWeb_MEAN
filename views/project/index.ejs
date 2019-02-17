@@ -8,9 +8,153 @@
 
 <% include ../partials/_header.ejs %>
 
-    <div id="main">
-            <p><%= title %> </p>
+<div id="project">
+    <div id="project_head">
+        <h2>Here are what I have done:</h2>
 
     </div>
+    <div id="project_body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h5>&bullet; Web applications: </h5>
+                    <div class="card-deck">
+                        <!-- Project 1-->
+                        <div class="card border-light text-center">
+                            <div class="card-image">
+                                <!-- <a data-toggle="modal" data-target="#project1"> -->
+                                    <img src="Assets/images/projectImg/WhatSAP_logo.png" class="card-img-top" />
+                                    <div class="overlay">
+                                        <div class="text"><i class="fa fa-3x fa-plus"></i></div>
+                                    </div>
+                                <!-- </a> -->
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h5 class="card-title">WhatSAP  
+                                    <a href="https://github.com/WanDongKim/WhatSAP"><i class="fa fa-github"></i></a>
+                                </h5>
+                                <p class="card-text">
+                                    <i>
+                                        Social Activity Platform Web Application
+                                    </i>
+                                </p>
+                            </div>
+                            <div class="card-footer text-right">
+                                    <small class="text-muted">Worked as a leading developer in a team</small>
+                            </div>
+                        </div>
+                        <!-- Project 2-->
+                        <div class="card border-light text-center">
+                            <div class="card-image">
+                                <img src="Assets/images/projectImg/MarketPlaceAPI.jpg" class="card-img-top" />
+                                <div class="overlay">
+                                    <div class="text"><i class="fa fa-3x fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    MarketPlace API  
+                                    <a href="https://github.com/WanDongKim/MarketPlaceAPI"><i class="fa fa-github"></i></a>
+                                </h5>
+                                <p class="card-text">
+                                    <i>
+                                        API offers users to see different offer in-app and find the
+                                        best suitable deals
+                                    </i>
+                                </p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">Worked as an individual</small>
+                            </div>
+                        </div>
+                        <!-- Project 3-->
+                        <div class="card border-light text-center">
+                            <div class="card-image">
+                                <img src="Assets/images/projectImg/Guardians.png" class="card-img-top" />
+                                <div class="overlay">
+                                    <div class="text"><i class="fa fa-3x fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <hr />
 
-<% include ../partials/_footer.ejs %>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    The Guardians of Galaxy  
+                                    <a href="https://github.com/WanDongKim/The-Galaxy-of-the-Guardians"><i class="fa fa-github"></i></a>
+                                </h5>
+                                <p class="card-text">
+                                    <i>
+                                        2D top-down shooting game
+                                    </i>
+                                </p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">Worked as a back-end developer in a team</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <% include ../partials/_footer.ejs %>
+    </div>
+</div>
+<!-- 
+<!-- project Modal 1 -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+                <div class="modal-header">
+                        <h5 class="modal-title">WhatSAP</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                        <div id="carouselControls"  class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" id="pic">
+                                <div class="carousel-item active">
+                                        <img id="imgge" src="Assets/images/projectImg/WhatSAP_logo.png">
+                                </div>
+                                <div class="carousel-item">
+                                        <img id="imgge" src="Assets/images/projectImg/WhatSAP_ss00.png">
+                                </div>
+                                <div class="carousel-item">
+                                        <img id="imgge" src="Assets/images/projectImg/WhatSAP_ss01.png">
+                                </div>
+                                <div class="carousel-item">
+                                        <img id="imgge" src="Assets/images/projectImg/WhatSAP_ss02.png">
+                                </div>
+                                <div class="carousel-item">
+                                        <img id="imgge" src="Assets/images/projectImg/WhatSAP_ss03.png">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                            </div>
+
+                           
+                            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                        </div>
+
+                    </div>
+                
+    </div>
+</div>
+</div> -->
