@@ -4,14 +4,14 @@
 // FIle name: server.js
 // Name: Dongwan Kim
 // Student id: 300932262
-// Date: Feb 11th, 2019
+// last modified: Mar 26th, 2019
 
 
 /**
  * Module dependencies.
  */
 
-let app = require('./app');
+let app = require('./server/config/app');
 let debug = require('debug')('portfolio-web:server');
 let http = require('http');
 
