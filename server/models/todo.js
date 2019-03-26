@@ -5,7 +5,6 @@
     // Last modified: Mar 26th, 2019
 
 let mongoose = require('mongoose');
-let passportLocalMongoose = require('passport-local-mongoose');
 
 let todoSchema = mongoose.Schema({
         name:{

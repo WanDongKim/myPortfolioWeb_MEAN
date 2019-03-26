@@ -39,7 +39,7 @@ mongoDB.once('open', ()=> {
 
 
 let indexRouter = require('../routes/index');
-//let todoRouter = require('../routes/todo'); //TODO:Implement TODO LIST...
+let todoRouter = require('../routes/todo');
 
 let app = express();
 
@@ -98,13 +98,14 @@ let strategy = new JWTStrategy(jwtOptions, (jwt_payload, done) =>{
 
 passport.use(strategy);
 
-//app.use('/api',indexRouter);
-//app.use('/api/todo', passport.authenticate('jwt', {session: false}), contactRouter); 
-// app.use('*', (req, res) =>{
-//   res.sendFile(path.join(__dirname, '../../public/index.html'));
-// });
+app.use('/api',indexRouter);
+app.use('/api/todo', passport.authenticate('jwt', {session: false}), todoRouter); 
 
-app.use('/', indexRouter);
+app.use('*', (req, res) =>{
+  res.sendFile(path.join(__dirname, '../../public/index.html'));
+});
+
+// app.use('/', indexRouter);
 // app.use('/contact-list', contactRouter);
 // app.use('/about',aboutRouter);
 // catch 404 and forward to error handler
