@@ -12,7 +12,6 @@ export class AppComponent {
 
   }
   isTitleHome(): boolean {
-    console.log( this.router.url)
     return this.router.url === ('/home' || '/');
   }
 }

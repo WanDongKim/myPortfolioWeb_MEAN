@@ -17,9 +17,9 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
     this.user = new User();
   }
-  onRegisterSubmit(): void{
-    this.authService.registerUser(this.user).subscribe(data =>{
-      if(data.success){
+  onRegisterSubmit(): void {
+    this.authService.registerUser(this.user).subscribe(data => {
+      if (data.success) {
         this.flashMessage.show('You are now registered and may log in', {cssClass: 'alert-success', timeOut: 3000});
         this.router.navigate(['/login']);
       } else {

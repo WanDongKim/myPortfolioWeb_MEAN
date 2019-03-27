@@ -1,4 +1,3 @@
-import { AppComponent } from './../../app.component';
 import { User } from 'src/app/models/user';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
@@ -22,15 +21,15 @@ export class HeaderComponent implements OnInit {
     this.user = new User();
   }
   onLogoutClick(): void {
-    this.authService.logout().subscribe(data =>{
+    this.authService.logout().subscribe(data => {
       this.flashMessage.show(data.msg, {cssClass: 'alert-warning', timeOut: 5000});
       this.router.navigate(['/login']);
-    })
+    });
   }
   isLoggedIn(): boolean {
     const result = this.authService.loggedIn();
-    if(result) {
-      this.user =JSON.parse(localStorage.getItem('user'));
+    if (result) {
+      this.user = JSON.parse(localStorage.getItem('user'));
     }
     return result;
   }
