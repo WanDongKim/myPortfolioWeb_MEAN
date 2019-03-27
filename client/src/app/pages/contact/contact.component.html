@@ -1,3 +1,61 @@
-<p>
-  contact works!
-</p>
+<div id="contact">
+    <div id="contact_head">
+        <h3>I can do it</h3>
+        <h4>I am currently available for web development</h4>
+        <h5>If you have an available position or an project that you want to get started,</h5>
+        <h5>please get in touch!</h5>
+    </div>
+
+    <form id="contact-form" method="get" role="form" onsubmit="alertMessage()" action="/">
+            <div class="messages"></div>
+            <div class="controls">
+                        <div class="form-group">
+                            <label for="form_name">First Name *</label>
+                            <input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_lastname">Last Name *</label>
+                            <input id="form_lastname" type="text" name="lname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <input id="submit" type="submit" class="btn btn-primary btn-send" value="Send message">
+            </div>
+        </form>
+</div>
+
+<script>
+/*
+    FIle name: app.js
+    Name: Dongwan Kim
+    Student id: 300932262
+    Date: Feb 11th, 2019
+*/
+(function(){
+    function Start() {
+        console.log(`App Started...`)
+    }
+
+    window.addEventListener("load", Start);
+})();
+
+function alertMessage() {
+    fname = document.forms[0].fname.value;
+    lname = document.forms[0].lname.value;
+    email = document.forms[0].email.value;
+    message = document.forms[0].message.value;
+
+    total = "Hello, " + fname + " " + lname + "(" + email + ")"+ "\nYour email is sent with contents:\n" + message;
+    alert(total);
+}
+</script>
