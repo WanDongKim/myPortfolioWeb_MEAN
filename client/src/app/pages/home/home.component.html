@@ -30,11 +30,25 @@
           <li class="nav-item active">
             <a class="nav-link" routerLink="/services">Services</a>
           </li>
-          <li class="nav-item active">
+          <li *ngIf="isLoggedIn()" class="nav-item active">
+              <a class="nav-link" routerLink="/todo">Todo List</a>
+          </li>
+          <li  class="nav-item active">
             <a class="nav-link" routerLink="/contact">Contact</a>
           </li>
-        </ul>
-      </div>
+
+          <li *ngIf="isLoggedIn()" class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-lg fa-user"></i>
+            Welcome, {{ user.firstName + user.lastName }}
+          </li>
+          <li *ngIf="isLoggedIn()" class="nav-item"><a (click)="onLogoutClick()" routerLink="/logout" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a>
+          </li>
+          <li *ngIf="!isLoggedIn()" class="nav-item"><a routerLink="/login" class="nav-link">
+            <i class="fas fa-lg fa-sign-in-alt"></i> Login</a>
+          </li>
+
+          </ul>
+        </div>
     </nav>
       <a id="brand" routerLink="/">
         <img

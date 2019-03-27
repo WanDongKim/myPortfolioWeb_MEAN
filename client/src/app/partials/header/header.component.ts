@@ -1,8 +1,9 @@
-import { User } from 'src/app/models/user';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { Component, OnInit } from '@angular/core';
+
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'app-header',

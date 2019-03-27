@@ -9,6 +9,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
+import { TodoDetailsComponent } from './pages/todo/todo-details/todo-details.component';
 
 // Components
 const routes: Routes = [
@@ -17,6 +19,12 @@ const routes: Routes = [
   {path: 'projects', component: ProjectsComponent, data: {title: 'Projects'}},
   {path: 'services', component: ServicesComponent, data: {title: 'Services'}},
   {path: 'contact', component: ContactComponent, data: {title: 'Contact'}},
+
+  {path: 'todo', component: TodoListComponent, data: {title: 'Todo List'}},
+  {path: 'todo/add', component: TodoDetailsComponent, data: {title: 'Add Todo'}},
+  {path: 'todo/edit/:id', component: TodoDetailsComponent, data: {title: 'Edit Todo'}},
+  {path: 'todo/delete/:id', component: TodoListComponent, data: {title: 'Delete Todo'}},
+
 
   {path: 'register', component: RegisterComponent, data: {title: 'Register'}},
   {path: 'login', component: LoginComponent, data: {title: 'Login'}},
