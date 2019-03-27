@@ -1,5 +1,6 @@
 import { Router } from '@angular/router';
 import { Component } from '@angular/core';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
 
   }
   isTitleHome(): boolean {
-    console.log(this.router.url);
+    console.log( this.router.url)
     return this.router.url === ('/home' || '/');
   }
 }
