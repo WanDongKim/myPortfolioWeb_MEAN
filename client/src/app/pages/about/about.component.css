@@ -1,0 +1,31 @@
+/* About style file
+    FIle name: about.css
+    Name: Dongwan Kim
+    Student id: 300932262
+    Date: Feb 13rd, 2019
+*/
+#picture {
+  margin: 0 auto 0 auto;
+}
+#picture img{
+  width: 20rem;
+}
+
+#description{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#description #name{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#description #name h3{
+  margin-top: 1rem;
+
+}
+#description #info {
+  margin: 1rem;
+}
+#description #info a:hover{
+  text-decoration-line: none;
+}

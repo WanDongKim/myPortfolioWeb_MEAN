@@ -1,5 +1,5 @@
-<app-header *ngIf="title != 'Home'"></app-header>
+<app-header [hidden]="isTitleHome('header')"></app-header>
 <flash-messages></flash-messages>
 <router-outlet></router-outlet>
+<app-footer [hidden]="isTitleHome('footer')"></app-footer>
 
-<app-footer *ngIf="title != 'Home'")></app-footer>
