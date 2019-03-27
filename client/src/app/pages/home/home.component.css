@@ -1,0 +1,51 @@
+
+
+/* Main page */
+#header_main {
+  background-image: url("../../../assets/images/header_back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
+  text-align: center;
+}
+#header_main a{
+  color: white;
+}
+#header_main a:hover{
+  color: tomato;
+  transition: 1s;
+}
+#header_main h1, h5{
+  font-weight: bold;
+}
+#header_main hr {
+  border-style: inset;
+  border-width: 1px;
+  border-color:darkgray;
+  display: block;
+  margin: 5rem 30%  5rem 30%;
+}
+#header_main .intro{
+  color: white;
+  margin-top: 10%;
+  text-align: center;
+}
+#header_main .intro h3{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+#header_main .intro h5{
+  font-size: 1.2rem;
+}
+#header_main .social {
+  color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+#header_main .social a{
+  cursor: pointer;
+  margin: 0 0.5rem 0 0.5rem;
+}
+

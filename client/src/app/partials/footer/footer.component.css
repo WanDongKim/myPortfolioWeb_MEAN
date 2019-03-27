@@ -1,0 +1,36 @@
+/* Footer style file
+    FIle name: footer.css
+    Name: Dongwan Kim
+    Student id: 300932262
+    Date: Feb 11th, 2019
+*/
+#footer {
+  display: block;
+  position: -ms-page;
+  margin: 5rem auto 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  background-color: #bfbfbf;
+  text-align: center;
+}
+#footer a {
+  color: white;
+}
+#footer a:hover {
+  color: tomato;
+  transition: 1s;
+}
+#footer small {
+  color: white;
+}
+#footer .social {
+  color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+#footer .social a {
+  cursor: pointer;
+  margin: 0 0.5rem 0 0.5rem;
+}

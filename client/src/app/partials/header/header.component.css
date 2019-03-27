@@ -1,0 +1,60 @@
+/* Header style file
+    FIle name: header.css
+    Name: Dongwan Kim
+    Student id: 300932262
+    Date: Feb 11th, 2019
+*/
+html,body{
+  height: 100%;
+}
+
+/* Header for others */
+#header {
+  background-image: url("../../../assets/images/header_back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+#header a{
+  color: white;
+}
+#header a:hover{
+  color: tomato;
+  transition: 1s;
+}
+
+#header h1, h5{
+  font-weight: bold;
+}
+#header hr {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-style: inset;
+  border-width: 1px;
+  border-color:darkgray;
+}
+#header .intro{
+  color: white;
+  text-align: center;
+  margin-top: 1%;
+}
+#header .intro h3{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+#header .intro h5{
+  font-size: 1.2rem;
+}
+#header .social {
+  color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+#header .social a{
+  cursor: pointer;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
