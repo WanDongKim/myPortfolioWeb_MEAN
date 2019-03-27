@@ -12,6 +12,7 @@ import { User } from 'src/app/models/user';
 })
 export class HeaderComponent implements OnInit {
   user: User;
+  displayName: string;
   constructor(
     private flashMessage: FlashMessagesService,
     private authService: AuthService,
@@ -31,6 +32,7 @@ export class HeaderComponent implements OnInit {
     const result = this.authService.loggedIn();
     if (result) {
       this.user = JSON.parse(localStorage.getItem('user'));
+      this.displayName = this.user.firstName + ' ' + this.user.lastName;
     }
     return result;
   }

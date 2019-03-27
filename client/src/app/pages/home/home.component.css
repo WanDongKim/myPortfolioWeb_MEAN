@@ -12,6 +12,7 @@
 }
 #header_main a{
   color: white;
+  display: inline-block;
 }
 #header_main a:hover{
   color: tomato;

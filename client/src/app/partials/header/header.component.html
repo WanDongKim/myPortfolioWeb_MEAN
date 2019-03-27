@@ -35,8 +35,8 @@
               <a class="nav-link" routerLink="/contact">Contact</a>
             </li>
 
-            <li *ngIf="isLoggedIn()" class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-lg fa-user"></i>
-              Welcome, {{ user.firstName + user.lastName }}
+            <li *ngIf="isLoggedIn()" class="navbar-text text-warning ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-lg fa-user"></i>
+              Welcome, {{ displayName }}
             </li>
             <li *ngIf="isLoggedIn()" class="nav-item"><a (click)="onLogoutClick()" routerLink="/logout" class="nav-link">
               <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a>
@@ -51,8 +51,8 @@
         <a id="brand" routerLink="/">
           <img
             srcset="../../../assets/images/myLogo.png"
-            width="3%"
-            height="3%"
+            width="45%"
+            height="45%"
             class="rounded mx-auto d-block"
           />
         </a>

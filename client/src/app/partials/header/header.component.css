@@ -19,6 +19,7 @@ html,body{
 }
 #header a{
   color: white;
+  display: inline-block;
 }
 #header a:hover{
   color: tomato;

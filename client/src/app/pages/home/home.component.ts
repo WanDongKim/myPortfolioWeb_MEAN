@@ -13,6 +13,7 @@ import { User } from 'src/app/models/user';
 })
 export class HomeComponent extends BasePageComponent  implements OnInit {
   user: User;
+  displayName: string;
   constructor(
     route: ActivatedRoute,
     private authService: AuthService,
@@ -36,6 +37,7 @@ export class HomeComponent extends BasePageComponent  implements OnInit {
     const result = this.authService.loggedIn();
     if (result) {
       this.user = JSON.parse(localStorage.getItem('user'));
+      this.displayName = this.user.firstName + ' ' + this.user.lastName;
     }
     return result;
   }
