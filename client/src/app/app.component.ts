@@ -1,5 +1,5 @@
-import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  static title = 'Home';
-  isTitleHome(add: string): boolean {
-    return (AppComponent.title === 'Home');
-  }
+  constructor(public router: Router) {
 
+  }
+  isTitleHome(): boolean {
+    console.log(this.router.url);
+    return this.router.url === ('/home' || '/');
+  }
 }

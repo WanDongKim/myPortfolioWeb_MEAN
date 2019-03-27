@@ -1,5 +1,11 @@
-<app-header [hidden]="isTitleHome('header')"></app-header>
-<flash-messages></flash-messages>
-<router-outlet></router-outlet>
-<app-footer [hidden]="isTitleHome('footer')"></app-footer>
-
+<ng-container *ngIf="isTitleHome(); then home; else other">
+</ng-container>
+<ng-template #home>
+    <flash-messages></flash-messages>
+    <router-outlet></router-outlet>
+</ng-template>
+<ng-template #other>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</ng-template>
