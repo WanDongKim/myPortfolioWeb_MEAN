@@ -36,7 +36,7 @@ export class TodoDetailsComponent implements OnInit {
     });
   }
   onDetailPageSubmit(): void {
-    switch (this.title){
+    switch (this.title) {
       case 'Add Todo':
       this.todoListService.addTodo(this.todo).subscribe(data => {
         if (data.success) {

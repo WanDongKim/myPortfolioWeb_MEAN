@@ -11,6 +11,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 import { TodoDetailsComponent } from './pages/todo/todo-details/todo-details.component';
+import { TodoDeleteComponent } from './pages/todo/todo-delete/todo-delete.component';
 
 // Components
 const routes: Routes = [
@@ -23,7 +24,7 @@ const routes: Routes = [
   {path: 'todo', component: TodoListComponent, data: {title: 'Todo List'}},
   {path: 'todo/add', component: TodoDetailsComponent, data: {title: 'Add Todo'}},
   {path: 'todo/edit/:id', component: TodoDetailsComponent, data: {title: 'Edit Todo'}},
-  {path: 'todo/delete/:id', component: TodoListComponent, data: {title: 'Delete Todo'}},
+  {path: 'todo/delete/:id', component: TodoDeleteComponent, data: {title: 'Delete Todo'}},
 
 
   {path: 'register', component: RegisterComponent, data: {title: 'Register'}},

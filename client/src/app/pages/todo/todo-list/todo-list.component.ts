@@ -35,6 +35,8 @@ export class TodoListComponent implements OnInit {
   }
 
   onDeleteClick(): void {
-
+    if (!confirm('Do you want to delete this todo item?')) {
+      this.router.navigate(['/contact/contact-list']);
+    }
   }
 }
