@@ -100,7 +100,6 @@ passport.use(strategy);
 
 app.use('/api',indexRouter);
 app.use('/api/todo', passport.authenticate('jwt', {session: false}), todoRouter); 
-
 app.use('*', (req, res) =>{
   res.sendFile(path.join(__dirname, '../../public/index.html'));
 });

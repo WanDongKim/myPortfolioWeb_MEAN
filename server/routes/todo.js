@@ -13,6 +13,7 @@ let passport = require('passport');
 
 let todoController = require('../controllers/todo');
 
+    router.get('/', passport.authenticate('jwt', {session: false}), todoController.displayTodoList);
 /* GET Route for the Add page 
    this will display the Add page */
    router.get('/add', passport.authenticate('jwt', {session: false}), todoController.displayAddPage);

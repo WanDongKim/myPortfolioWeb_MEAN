@@ -20,15 +20,21 @@ export class TodoListComponent implements OnInit {
   ngOnInit() {
     this.todoList = new Array<Todo>();
     this.displayTodoList();
+    console.log(this.todoList);
   }
 
   displayTodoList(): void {
     this.todoService.getList().subscribe(data => {
+      console.log(data);
       if (data.success) {
         this.todoList = data.todoList;
       } else {
         this.flashMessage.show('User must be logged-in', {cssClass: 'alert-danger', timeOut: 3000});
       }
     });
+  }
+
+  onDeleteClick(): void {
+
   }
 }
