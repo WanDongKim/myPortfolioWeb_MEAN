@@ -11,7 +11,7 @@ import { User } from '../models/user';
 export class TodoService {
   private user: User;
   private authToken: any = null;
-  private endpoint = 'http://localhost:3000/api/todo/';
+  private endpoint = 'https://myportfolio-mean-dw.herokuapp.com/api/todo/';
 
   private httpOptions = {
     headers: new HttpHeaders({
