@@ -18,9 +18,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
-import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
-import { TodoDetailsComponent } from './pages/todo/todo-details/todo-details.component';
-import { TodoDeleteComponent } from './pages/todo/todo-delete/todo-delete.component';
+import { TodoListComponent } from './todo/todo-list/todo-list.component';
+import { TodoDetailsComponent } from './todo/todo-details/todo-details.component';
+import { TodoDeleteComponent } from './todo/todo-delete/todo-delete.component';
 
 // Services
 import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
