@@ -13,6 +13,8 @@ import { TodoListComponent } from './todo/todo-list/todo-list.component';
 import { TodoDetailsComponent } from './todo/todo-details/todo-details.component';
 import { TodoDeleteComponent } from './todo/todo-delete/todo-delete.component';
 
+import { AuthGuard } from './guards/auth.guard';
+
 // Components
 const routes: Routes = [
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
@@ -21,10 +23,10 @@ const routes: Routes = [
   {path: 'services', component: ServicesComponent, data: {title: 'Services'}},
   {path: 'contact', component: ContactComponent, data: {title: 'Contact'}},
 
-  {path: 'todo', component: TodoListComponent, data: {title: 'Todo List'}},
-  {path: 'todo/add', component: TodoDetailsComponent, data: {title: 'Add Todo'}},
-  {path: 'todo/edit/:id', component: TodoDetailsComponent, data: {title: 'Edit Todo'}},
-  {path: 'todo/delete/:id', component: TodoDeleteComponent, data: {title: 'Delete Todo'}},
+  {path: 'todo', component: TodoListComponent, data: {title: 'Todo List'}, canActivate: [AuthGuard] },
+  {path: 'todo/add', component: TodoDetailsComponent, data: {title: 'Add Todo'}, canActivate: [AuthGuard]},
+  {path: 'todo/edit/:id', component: TodoDetailsComponent, data: {title: 'Edit Todo', canActivate: [AuthGuard]}},
+  {path: 'todo/delete/:id', component: TodoDeleteComponent, data: {title: 'Delete Todo'}, canActivate: [AuthGuard]},
 
 
   {path: 'register', component: RegisterComponent, data: {title: 'Register'}},
