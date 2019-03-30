@@ -24,32 +24,32 @@ export class TodoService {
   constructor(private http: HttpClient) {
     this.user = new User();
    }
-
+   // Getting a todo list
    public getList(): Observable<any> {
     this.loadToken();
     return this.http.get<any>(this.endpoint, this.httpOptions);
   }
-
+  // Getting a todo item
   public getTodo(todo: Todo): Observable<any> {
     this.loadToken();
     return this.http.get<any>(this.endpoint + 'edit/' + todo._id, this.httpOptions);
   }
-
+  // Adding a todo item
   public addTodo(todo: Todo): Observable<any> {
     this.loadToken();
     return this.http.post<any>(this.endpoint + 'add', todo, this.httpOptions);
   }
-
+  // Editting a todo item
   public editTodo(todo: Todo): Observable<any> {
     this.loadToken();
     return this.http.post<any>(this.endpoint + 'edit/' + todo._id, todo, this.httpOptions);
   }
-
+  // Deleting a todo item
   public deleteTodo(todo: Todo): Observable<any> {
     this.loadToken();
     return this.http.get<any>(this.endpoint + 'delete/' + todo._id, this.httpOptions);
   }
-
+  // Getting a session token for auth
   private loadToken() {
     const token = localStorage.getItem('id_token');
     this.authToken = token;

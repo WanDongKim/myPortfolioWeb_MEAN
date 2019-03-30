@@ -35,7 +35,7 @@ export class AuthService {
   public authenticateUser(user: User): Observable<any> {
     return this.http.post<any>(this.endpoint + 'login', user, this.httpOptions);
   }
-
+  // Store a session data for user auth
   public storeUserData(token: any, user: User): void {
     localStorage.setItem('id_token', 'Bearer ' + token);
     localStorage.setItem('user', JSON.stringify(user));
